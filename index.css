@@ -1,0 +1,75 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    background-image: url("images/pexels-marek-piwnicki-3907296-12966908.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.submit-form{
+    display: inline-block;
+    width: 500px; 
+    margin-top: 100px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.name-input-div{
+    margin-bottom: 30px;
+}
+.name-input{
+    width: 300px;
+    height: 30px;
+}
+.name-input::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.email-input-div{
+    margin-bottom: 30px;
+}
+.email-input{
+    width: 300px;
+    height: 30px;
+}
+.email-input::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.message-div{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.message{
+    width: 300px;
+    height: 100px;
+}
+.message::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.submit-btn-div{
+    display: flex;
+    justify-content: center;
+}
+.submit-btn{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightskyblue;
+}
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: lightblue;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+    <div class="submit-form">
+        <h2>Contact Us</h2>
+        <form onsubmit="handleSubmit()">
+            <div class="name-input-div">
+                        <input class="name-input" type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="email-input-div">
+                        <input class="email-input" type="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="message-div">
+                        <textarea class="message" placeholder="Your message" required></textarea>
+                    </div>
+                    <div class="submit-btn-div">
+                        <button class="submit-btn" >Submit</button>
+                    </div>
+                    <div class="message-div">
+                        <p id="message"></p>
+                    </div>
+        </form>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
