@@ -4,31 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
     <div class="submit-form">
-        <h2>Contact Us</h2>
-        <form onsubmit="handleSubmit()">
-            <div class="name-input-div">
-                        <input class="name-input" type="text" placeholder="Enter your name" required>
-                    </div>
-                    <div class="email-input-div">
-                        <input class="email-input" type="email" placeholder="Enter email" required>
-                    </div>
-                    <div class="message-div">
-                        <textarea class="message" placeholder="Your message" required></textarea>
-                    </div>
-                    <div class="submit-btn-div">
-                        <button class="submit-btn" >Submit</button>
-                    </div>
-                    <div class="message-div">
-                        <p id="message"></p>
-                    </div>
+        <h2>Contact Us ☎️</h2>
+        <p class="form-subtitle">Hello 👋, have a question or project in mind? Send us a message.</p>
+
+        <form onsubmit="handleSubmit(event)">
+            <p class="section-label">Name 👤</p>
+
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="secondName">Second Name</label>
+                <input id="secondName" name="secondName" type="text" placeholder="Enter your second name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Surname <span class="optional-text">(optional)</span></label>
+                <input id="surname" name="surname" type="text" placeholder="Enter your surname">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email 📧</label>
+                <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="messageInput">Message 📝</label>
+                <textarea id="messageInput" name="message" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button class="submit-btn" type="submit">Submit Message 🚀</button>
+
+            <p id="message" class="success-message"></p>
         </form>
-        
     </div>
-    <script src="index.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
