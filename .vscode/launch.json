@@ -10,6 +10,13 @@
       "name": "Open index.html in Chrome",
       "file": "${workspaceFolder}/index.html",
       "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Open index.html in Edge",
+      "file": "${workspaceFolder}/index.html",
+      "webRoot": "${workspaceFolder}"
     }
   ]
 }
